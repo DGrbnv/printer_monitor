@@ -1,0 +1,28 @@
+telegram:
+  bot_token: ""
+  chat_id: ""
+
+printers:
+  FBR3_01:
+    url: "http://10.0.0.101:7125"
+  FBR3_02:
+    url: "http://10.0.0.102:7125"
+  FBR3_03:
+    url: "http://10.0.0.103:7125"
+
+spoolman:
+  url: "http://10.0.0.200:7912"
+  cache_ttl_seconds: 30
+  error_ttl_seconds: 5
+
+monitoring:
+  check_interval: 10
+  startup_message: true
+  telegram_retries: 3
+
+paths:
+  data_dir: "data"
+  logs_dir: "logs"
+  state_file: "printer_states.json"
+  log_file: "printer_monitor.log"
+  db_file: "print_events.db"
